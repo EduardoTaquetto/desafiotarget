@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        String stringOriginal = "hello";
+        String stringInvertida = inverteString(stringOriginal);
+        System.out.println("String original: " + stringOriginal);
+        System.out.println("String invertida: " + stringInvertida);
+    }
+
+    public static String inverteString(String string) {
+        StringBuilder stringInvertida = new StringBuilder();
+        for (int i = string.length() - 1; i >= 0; i--) {
+            stringInvertida.append(string.charAt(i));
+        }
+        return stringInvertida.toString();
+    }
+}
