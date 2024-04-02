@@ -12,8 +12,8 @@ public class Main {
             b = temp + b;
         }
         if (b == numero)
-            return numero + " pertence à sequência de Fibonacci.";
+            return numero + " pertence a sequencia de Fibonacci.";
         else
-            return numero + " não pertence à sequência de Fibonacci.";
+            return numero + " nao pertence a sequencia de Fibonacci.";
     }
 }
