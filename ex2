@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        int numeroVerificar = 21;
+        System.out.println(verificaFibonacci(numeroVerificar));
+    }
+
+    public static String verificaFibonacci(int numero) {
+        int a = 0, b = 1;
+        while (b < numero) {
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }
+        if (b == numero)
+            return numero + " pertence à sequência de Fibonacci.";
+        else
+            return numero + " não pertence à sequência de Fibonacci.";
+    }
+}
